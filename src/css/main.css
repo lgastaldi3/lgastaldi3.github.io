@@ -919,6 +919,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(247 248 252 / var(--tw-text-opacity));
 }
+.text-secondary-light {
+  --tw-text-opacity: 1;
+  color: rgb(137 138 142 / var(--tw-text-opacity));
+}
 .text-secondary-dark {
   --tw-text-opacity: 1;
   color: rgb(16 45 68 / var(--tw-text-opacity));

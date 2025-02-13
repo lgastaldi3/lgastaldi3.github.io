@@ -1,3 +1,4 @@
+// TODO: Add relevant category options
 const selectOptions = [
 	'Web Application',
 	'Mobile Application',

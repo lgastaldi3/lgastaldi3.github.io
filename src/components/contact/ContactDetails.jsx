@@ -1,19 +1,20 @@
 import { FiPhone, FiMapPin, FiMail } from 'react-icons/fi';
 
+//TODO: Protect credentials online
 const contacts = [
 	{
 		id: 1,
-		name: 'Your Address, Your City, Your Country',
+		name: 'Atlanta, Georgia',
 		icon: <FiMapPin />,
 	},
 	{
 		id: 2,
-		name: 'email@domain.com',
+		name: 'lgastaldi3@gatech.edu',
 		icon: <FiMail />,
 	},
 	{
 		id: 3,
-		name: '555 8888 888',
+		name: '4049064040',
 		icon: <FiPhone />,
 	},
 ];
