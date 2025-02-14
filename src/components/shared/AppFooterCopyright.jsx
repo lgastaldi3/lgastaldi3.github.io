@@ -6,7 +6,7 @@ function AppFooterCopyright() {
 				<a
 					href="https://linkedin.com/in/lgastaldi3"
 					target="__blank"
-					className="hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 ml-1 duration-500"
+					className="underline dark:hover:underline hover:underline-gold-600 dark:hover:text-indigo-300 ml-1 duration-500"
 				>
 					Lorenzo Gastaldi
 				</a>

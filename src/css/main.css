@@ -734,9 +734,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
+.bg-indigo-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 246 194 / var(--tw-bg-opacity));
+}
 .bg-indigo-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
+  background-color: rgb(255 217 90 / var(--tw-bg-opacity));
+}
+.bg-indigo-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 217 0 / var(--tw-bg-opacity));
 }
 .bg-gray-600 {
   --tw-bg-opacity: 1;
@@ -913,7 +921,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .text-white {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 .text-primary-light {
   --tw-text-opacity: 1;
@@ -958,6 +966,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.underline {
+  text-decoration-line: underline;
+}
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -984,7 +995,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .hover\:bg-indigo-600:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(79 70 229 / var(--tw-bg-opacity));
+  background-color: rgb(255 217 0 / var(--tw-bg-opacity));
 }
 .hover\:bg-ternary-dark:hover {
   --tw-bg-opacity: 1;
@@ -992,15 +1003,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .hover\:bg-indigo-500:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
+  background-color: rgb(255 217 90 / var(--tw-bg-opacity));
+}
+.hover\:bg-indigo-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 246 194 / var(--tw-bg-opacity));
 }
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
+.hover\:bg-gray-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(103 104 106 / var(--tw-bg-opacity));
+}
 .hover\:text-indigo-500:hover {
   --tw-text-opacity: 1;
-  color: rgb(99 102 241 / var(--tw-text-opacity));
+  color: rgb(255 217 0 / var(--tw-text-opacity));
 }
 .hover\:text-primary-dark:hover {
   --tw-text-opacity: 1;
@@ -1008,11 +1027,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 .hover\:text-indigo-600:hover {
   --tw-text-opacity: 1;
-  color: rgb(79 70 229 / var(--tw-text-opacity));
+  color: rgb(255 217 0 / var(--tw-text-opacity));
 }
 .hover\:text-gray-400:hover {
   --tw-text-opacity: 1;
@@ -1033,6 +1052,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.hover\:underline-gold-600:hover {
+  text-decoration-color: rgb(255 217 0 / var(--tw-text-opacity));
+  text-decoration: underline;
 }
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
@@ -1108,7 +1131,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .dark .dark\:hover\:text-indigo-400:hover {
   --tw-text-opacity: 1;
-  color: rgb(129 140 248 / var(--tw-text-opacity));
+  color: rgb(255 217 0 / var(--tw-text-opacity));
 }
 .dark .dark\:hover\:text-primary-light:hover {
   --tw-text-opacity: 1;
@@ -1116,7 +1139,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .dark .dark\:hover\:text-indigo-300:hover {
   --tw-text-opacity: 1;
-  color: rgb(165 180 252 / var(--tw-text-opacity));
+  color: rgb(255 217 90 / var(--tw-text-opacity));
 }
 .dark .dark\:hover\:text-secondary-light:hover {
   --tw-text-opacity: 1;

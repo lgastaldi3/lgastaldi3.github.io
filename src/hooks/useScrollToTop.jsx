@@ -34,17 +34,10 @@ const useScrollToTop = () => {
 	return (
 		<>
 			<FiChevronUp
-				className="scrollToTop"
+				className={`scrollToTop bg-indigo-600 text-white fixed rounded-full p-1 
+				w-[45px] h-[45px] bottom-[50px] right-[50px] 
+				${showScroll ? 'flex' : 'none'}`}
 				onClick={backToTop}
-				style={{
-					height: 45,
-					width: 45,
-					borderRadius: 50,
-					right: 50,
-					bottom: 50,
-					display: showScroll ? 'flex' : 'none',
-					padding: 5,
-				}}
 			/>
 		</>
 	);
