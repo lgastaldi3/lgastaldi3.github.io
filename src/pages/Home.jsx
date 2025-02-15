@@ -4,6 +4,7 @@ import ProjectsGrid from '../components/projects/ProjectsGrid';
 import { ProjectsProvider } from '../context/ProjectsContext';
 import Button from '../components/reusable/Button';
 
+
 const Home = () => {
 	return (
 		<div className="container mx-auto">
