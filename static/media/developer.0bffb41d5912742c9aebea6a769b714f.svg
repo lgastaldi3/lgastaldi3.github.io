@@ -3,28 +3,28 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 414.7 376" style="enable-background:new 0 0 414.7 376;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#EBEBEB;}
-	.st1{fill:#F0F0F0;}
-	.st2{fill:#F5F5F5;}
-	.st3{fill:#E6E6E6;}
-	.st4{fill:#FFFFFF;}
-	.st5{fill:#E0E0E0;}
-	.st6{fill:#FAFAFA;}
-	.st7{display:none;}
-	.st8{display:inline;}
-	.st9{fill:#407BFF;}
+	.st0{fill:#FFFADC;}
+	.st1{fill:#FFE9A0;}
+	.st2{fill:#FFF5B4;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:#FFD95A;}
+	.st5{fill:#FFC800;}
+	.st6{fill:#7A5A00;}
+	.st7{fill:#4A3A00;}
+	.st8{display:none;}
+	.st9{display:inline;}
 	.st10{opacity:0.9;fill:#FFFFFF;}
 	.st11{opacity:0.3;fill:#FFFFFF;}
-	.st12{fill:#263238;}
-	.st13{opacity:0.4;fill:#407BFF;}
-	.st14{opacity:0.1;fill:#407BFF;}
+	.st12{fill:#4A3A00;}
+	.st13{opacity:0.4;fill:#FFD95A;}
+	.st14{opacity:0.1;fill:#FFD95A;}
 	.st15{opacity:0.4;fill:#FFFFFF;}
 	.st16{opacity:0.3;}
-	.st17{opacity:0.6;fill:#407BFF;}
+	.st17{opacity:0.6;fill:#FFD95A;}
 	.st18{fill:#FF5652;}
 	.st19{fill:#FF8B7B;}
 	.st20{opacity:0.2;}
-	.st21{fill:#6C63FF;}
+	.st21{fill:#FFC800;}
 	.st22{opacity:0.5;fill:#FFFFFF;}
 	.st23{opacity:0.7;fill:#FFFFFF;}
 </style>
@@ -84,23 +84,7 @@
 			<polygon class="st1" points="64.3,323.4 89.8,323.4 82.7,319.2 71.4,319.2 			"/>
 			<polygon class="st2" points="26.6,123.4 127.5,123.4 116.4,38.7 37.7,38.7 			"/>
 		</g>
-		<g>
-			<polygon class="st1" points="176.2,137.4 230.1,137.4 223,181.3 183.3,181.3 			"/>
-			<g>
-				<path class="st5" d="M197.8,151.7c14.7-5.3,25.9-13.3,13.3-29.4c-12.6-16.1-32.1-16.1-45.2-8.9c-16.7,9.1-13.4,35.5-13.4,35.5
-					S183.2,157,197.8,151.7z"/>
-				<path class="st3" d="M212.1,137c-11.2-7.6-19.2-16.5-6.2-25.8c13-9.3,29.1-4.6,38.8,4.1c12.3,11.1,5.2,30.5,5.2,30.5
-					S223.3,144.6,212.1,137z"/>
-				<path class="st1" d="M192.3,117.6c13.1-0.8,24.2-4.2,17.9-18.5c-6.2-14.2-22-18.2-34.3-15.8c-15.7,3.1-19.4,22.8-19.4,22.8
-					S179.2,118.4,192.3,117.6z"/>
-				<path class="st0" d="M208.8,109.2c-10.9-3.5-19.5-8.8-11.2-19.5c8.3-10.7,22.5-10.6,32.4-5.9c12.6,6,11.5,23.5,11.5,23.5
-					S219.8,112.7,208.8,109.2z"/>
-				<path class="st2" d="M188.3,91c10.9,3.6,20.9,4.4,20.5-9.2c-0.4-13.5-11.9-21.8-22.7-23.9C172.4,55.4,163,70.1,163,70.1
-					S177.4,87.4,188.3,91z"/>
-				<path class="st6" d="M216,85.2c-7.8,0.5-14.6-0.6-12-9.5c2.6-8.9,11.6-12.4,19-11.9c9.5,0.6,13.2,11.9,13.2,11.9
-					S223.8,84.6,216,85.2z"/>
-			</g>
-		</g>
+		
 	</g>
 </g>
 <g id="Background_Simple" class="st7">
