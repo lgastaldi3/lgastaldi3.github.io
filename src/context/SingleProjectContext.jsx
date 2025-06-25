@@ -3,14 +3,18 @@ import { singleProjectData as singleProjectDataJson } from '../data/singleProjec
 
 const SingleProjectContext = createContext();
 
-export const SingleProjectProvider = ({ children }) => {
+export const SingleProjectProvider = ({ children, projectSlug = 'solv' }) => {
 	const [singleProjectData, setSingleProjectData] = useState(
-		singleProjectDataJson
+		singleProjectDataJson[projectSlug] || singleProjectDataJson['solv']
 	);
+
+	const setCurrentProject = (slug) => {
+		setSingleProjectData(singleProjectDataJson[slug] || singleProjectDataJson['solv']);
+	};
 
 	return (
 		<SingleProjectContext.Provider
-			value={{ singleProjectData, setSingleProjectData }}
+			value={{ singleProjectData, setSingleProjectData, setCurrentProject }}
 		>
 			{children}
 		</SingleProjectContext.Provider>

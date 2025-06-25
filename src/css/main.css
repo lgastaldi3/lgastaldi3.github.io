@@ -1505,3 +1505,95 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 2.25rem;
   }
 }
+.border-yellow-50 {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 250 220 / var(--tw-border-opacity));
+}
+.border-yellow-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 245 180 / var(--tw-border-opacity));
+}
+.border-yellow-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 239 170 / var(--tw-border-opacity));
+}
+.border-yellow-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 233 140 / var(--tw-border-opacity));
+}
+.border-yellow-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 225 120 / var(--tw-border-opacity));
+}
+.border-yellow-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 217 90 / var(--tw-border-opacity));
+}
+.border-yellow-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 200 0 / var(--tw-border-opacity));
+}
+.border-yellow-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(230 180 0 / var(--tw-border-opacity));
+}
+.border-yellow-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(204 153 0 / var(--tw-border-opacity));
+}
+.border-yellow-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(153 102 0 / var(--tw-border-opacity));
+}
+.bg-yellow-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 250 220 / var(--tw-bg-opacity));
+}
+.bg-yellow-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 239 170 / var(--tw-bg-opacity));
+}
+.bg-yellow-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 217 90 / var(--tw-bg-opacity));
+}
+.bg-yellow-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 200 0 / var(--tw-bg-opacity));
+}
+.hover\:bg-yellow-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 200 0 / var(--tw-bg-opacity));
+}
+.hover\:bg-yellow-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 217 90 / var(--tw-bg-opacity));
+}
+.hover\:bg-yellow-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 239 170 / var(--tw-bg-opacity));
+}
+.hover\:text-yellow-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 217 90 / var(--tw-text-opacity));
+}
+.hover\:text-yellow-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 200 0 / var(--tw-text-opacity));
+}
+.focus\:ring-yellow-900:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(204 153 0 / var(--tw-ring-opacity));
+}
+.dark .dark\:hover\:text-yellow-400:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 239 170 / var(--tw-text-opacity));
+}
+dark .dark\:hover\:text-yellow-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 217 90 / var(--tw-text-opacity));
+}
+.hover\:border-yellow-600:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 200 0 / var(--tw-border-opacity));
+}

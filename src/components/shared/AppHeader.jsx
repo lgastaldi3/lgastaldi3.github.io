@@ -11,7 +11,7 @@ import Button from '../reusable/Button';
 const AppHeader = () => {
 	const [showMenu, setShowMenu] = useState(false);
 	const [showModal, setShowModal] = useState(false);
-	const [activeTheme, setTheme] = useThemeSwitcher();
+	const [theme, , toggleTheme] = useThemeSwitcher();
 
 	function toggleMenu() {
 		if (!showMenu) {
@@ -47,15 +47,15 @@ const AppHeader = () => {
 				<div className="flex justify-between items-center px-4 sm:px-0">
 					<div>
 						<Link to="/">
-							{activeTheme === 'dark' ? (
+							{theme === 'dark' ? (
 								<img
-									src={logoDark}
+									src={logoLight}
 									className="w-64"
 									alt="Dark Logo"
 								/>
 							) : (
 								<img
-									src={logoLight}
+									src={logoDark}
 									className="w-64"
 									alt="Dark Logo"
 								/>
@@ -65,14 +65,14 @@ const AppHeader = () => {
 
 					{/* Theme switcher small screen */}
 					<div
-						onClick={() => setTheme(activeTheme)}
+						onClick={toggleTheme}
 						aria-label="Theme Switcher"
 						className="block sm:hidden ml-0 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
 					>
-						{activeTheme === 'dark' ? (
-							<FiMoon className="text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light text-xl" />
-						) : (
+						{theme === 'dark' ? (
 							<FiSun className="text-gray-200 hover:text-gray-50 text-xl" />
+						) : (
+							<FiMoon className="text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light text-xl" />
 						)}
 					</div>
 
@@ -131,7 +131,7 @@ const AppHeader = () => {
 					{/*<div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 						<span
 							onClick={showHireMeModal}
-							className="font-general-medium sm:hidden block text-left text-md bg-indigo-300 hover:bg-indigo-600 text-white shadow-sm rounded-sm px-4 py-2 mt-2 duration-300 w-24"
+							className="font-general-medium sm:hidden block text-left text-md bg-yellow-300 hover:bg-yellow-600 text-white shadow-sm rounded-sm px-4 py-2 mt-2 duration-300 w-24"
 							aria-label="Hire Me Button"
 						>
 							<Button title="Hire Me" />
@@ -169,7 +169,7 @@ const AppHeader = () => {
 					{/*<div className="hidden md:flex">
 						<span
 							onClick={showHireMeModal}
-							className="text-md font-general-medium bg-indigo-300 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
+							className="text-md font-general-medium bg-yellow-300 hover:bg-yellow-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
 							aria-label="Hire Me Button"
 						>
 							<Button title="Hire Me" />
@@ -178,14 +178,14 @@ const AppHeader = () => {
 
 					{/* Theme switcher large screen */}
 					<div
-						onClick={() => setTheme(activeTheme)}
+						onClick={toggleTheme}
 						aria-label="Theme Switcher"
 						className="ml-8 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
 					>
-						{activeTheme === 'dark' ? (
-							<FiMoon className="text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light text-xl" />
-						) : (
+						{theme === 'dark' ? (
 							<FiSun className="text-gray-200 hover:text-gray-50 text-xl" />
+						) : (
+							<FiMoon className="text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light text-xl" />
 						)}
 					</div>
 				</div>
@@ -198,7 +198,6 @@ const AppHeader = () => {
 						onRequest={showHireMeModal}
 					/>
 				) : null}
-				{showModal ? showHireMeModal : null}
 			</div>
 		</motion.nav>
 	);

@@ -6,7 +6,7 @@ function AppFooterCopyright() {
 				<a
 					href="https://linkedin.com/in/lgastaldi3"
 					target="__blank"
-					className="underline dark:hover:underline hover:underline-gold-600 dark:hover:text-indigo-300 ml-1 duration-500"
+					className="underline dark:hover:underline hover:underline-gold-600 dark:hover:text-yellow-300 ml-1 duration-500"
 				>
 					Lorenzo Gastaldi
 				</a>
@@ -14,7 +14,7 @@ function AppFooterCopyright() {
 				{/*<a
 					href=""
 					target="__blank"
-					className="text-secondary-dark dark:text-secondary-light font-medium uppercase hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 ml-1 duration-500"
+					className="text-secondary-dark dark:text-secondary-light font-medium uppercase hover:underline hover:text-yellow-600 dark:hover:text-yellow-300 ml-1 duration-500"
 				>
 					Stoman
 				</a>*/}

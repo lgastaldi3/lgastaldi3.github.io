@@ -1,3 +1,4 @@
+import { useParams } from 'react-router-dom';
 import ProjectGallery from '../components/projects/ProjectGallery';
 import ProjectHeader from '../components/projects/ProjectHeader';
 import ProjectInfo from '../components/projects/ProjectInfo';
@@ -6,6 +7,8 @@ import { SingleProjectProvider } from '../context/SingleProjectContext';
 import { motion } from 'framer-motion';
 
 const ProjectSingle = () => {
+	const { projectSlug } = useParams();
+
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -17,7 +20,7 @@ const ProjectSingle = () => {
 			}}
 			className="container mx-auto mt-5 sm:mt-10"
 		>
-			<SingleProjectProvider>
+			<SingleProjectProvider projectSlug={projectSlug}>
 				<ProjectHeader />
 				<ProjectGallery />
 				<ProjectInfo />

@@ -50,7 +50,7 @@ const AppFooter = () => {
 								href={link.url}
 								target="__blank"
 								key={link.id}
-								className="text-gray-400 dark:hover:text-indigo-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-ternary-dark hover:bg-indigo-500 shadow-sm p-4 duration-300"
+								className="text-gray-400 dark:hover:text-yellow-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-ternary-dark hover:bg-yellow-500 shadow-sm p-4 duration-300"
 							>
 								<i className="text-xl sm:text-2xl md:text-3xl">
 									{link.icon}
