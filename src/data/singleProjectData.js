@@ -1,16 +1,13 @@
 // Import images
-import Image1 from '../images/ui-project-1.jpg';
-import Image2 from '../images/web-project-2.jpg';
-import Image3 from '../images/mobile-project-2.jpg';
-import Image4 from '../images/mobile-project-1.jpg';
-import Image5 from '../images/web-project-1.jpg';
-import Image6 from '../images/ui-project-2.jpg';
-import SolvPlaceholderMain from '../images/solv-page-project.jpg';
-import SolvPlaceholderScreenshot1 from '../images/solv-page-project.jpg';
-import SolvPlaceholderScreenshot2 from '../images/solv-page-project.jpg';
-import Gpt2PlaceholderMain from '../images/mobile-project-2.jpg';
-import Gpt2PlaceholderScreenshot1 from '../images/mobile-project-2.jpg';
-import Gpt2PlaceholderScreenshot2 from '../images/mobile-project-2.jpg';
+import SolvPlaceholderMain from '../images/projects/solv/solv-page-project.jpg';
+import SolvScreenshot1 from '../images/projects/solv/solv-logo-page.jpg';
+import SolvScreenshot2 from '../images/projects/solv/solv-page-project.jpg';
+import SolvScreenshot3 from '../images/projects/solv/solv-landing.jpg';
+import Gpt2PlaceholderMain from '../images/projects/gpt2/gpt2-diagram.jpg';
+import Gpt2PlaceholderScreenshot1 from '../images/projects/gpt2/gpt2-dialogue.jpg';
+import ThriftiMain from '../images/projects/thrifti/thrifti-cover.jpg';
+import ThriftiScreenshot1 from '../images/projects/thrifti/thrifti-explore.jpg';
+import ThriftiScreenshot2 from '../images/projects/thrifti/thrifti-analytics.jpg';
 // Import icons
 import {
 	FiFacebook,
@@ -30,18 +27,18 @@ export const singleProjectData = {
 		ProjectImages: [
 			{
 				id: 1,
-				title: 'Solv AI dashboard screenshot',
-				img: SolvPlaceholderMain,
+				title: 'Solv Logo Page',
+				img: SolvScreenshot1,
 			},
 			{
 				id: 2,
-				title: 'Solv AI Canvas integration screenshot',
-				img: SolvPlaceholderScreenshot1,
+				title: 'Solv Landing Page Screenshot',
+				img: SolvScreenshot3,
 			},
 			{
 				id: 3,
-				title: 'Solv AI analytics panel screenshot',
-				img: SolvPlaceholderScreenshot2,
+				title: 'Solv AI-Canvas Page',
+				img: SolvScreenshot2,
 			},
 		],
 		ProjectInfo: {
@@ -92,18 +89,6 @@ export const singleProjectData = {
 			SocialSharingHeading: 'Share This',
 			SocialSharing: [
 				{
-					id: 1,
-					name: 'Twitter',
-					icon: <FiTwitter />,
-					url: 'https://twitter.com/realstoman',
-				},
-				{
-					id: 2,
-					name: 'Instagram',
-					icon: <FiInstagram />,
-					url: 'https://instagram.com/realstoman',
-				},
-				{
 					id: 4,
 					name: 'LinkedIn',
 					icon: <FiLinkedin />,
@@ -132,11 +117,6 @@ export const singleProjectData = {
 				id: 2,
 				title: 'Training progress visualization',
 				img: Gpt2PlaceholderScreenshot1,
-			},
-			{
-				id: 3,
-				title: 'Generated text samples',
-				img: Gpt2PlaceholderScreenshot2,
 			},
 		],
 		ProjectInfo: {
@@ -177,7 +157,7 @@ export const singleProjectData = {
 				},
 				{
 					id: 3,
-					details: `One of the primary challenges in building Custom GPT2 Recreation was operating within significant resource limitations. Developing the model on Google Colab meant access to only a single GPU, which constrained the dataset size and required careful management of batch sizes and training iterations to make meaningful progress. With just 10MB of training data available, the model was highly susceptible to overfitting and noise, making it difficult to generalize or produce fluent text reliably. To mitigate this, letter-based tokenization paired with convolutional layers was used to improve representation efficiency. Another key difficulty was evaluating output quality — the model’s responses often hovered between plausible and incoherent, and without large-scale benchmarks, progress was assessed manually through qualitative analysis and tuning. These constraints demanded a highly iterative and resource-aware development process.`
+					details: `One of the primary challenges in building Custom GPT2 Recreation was operating within significant resource limitations. Developing the model on Google Colab meant access to only a single GPU, which constrained the dataset size and required careful management of batch sizes and training iterations to make meaningful progress. With just 10MB of training data available, the model was highly susceptible to overfitting and noise, making it difficult to generalize or produce fluent text reliably. To mitigate this, letter-based tokenization paired with convolutional layers was used to improve representation efficiency. Another key difficulty was evaluating output quality — the model's responses often hovered between plausible and incoherent, and without large-scale benchmarks, progress was assessed manually through qualitative analysis and tuning. These constraints demanded a highly iterative and resource-aware development process.`
 				}
 			],
 			SocialSharingHeading: 'Share This',
@@ -187,6 +167,93 @@ export const singleProjectData = {
 					name: 'LinkedIn',
 					icon: <FiLinkedin />,
 					url: 'https://linkedin.com/lgastaldi3/',
+				},
+			],
+		},
+		RelatedProject: {
+			title: 'Related Projects',
+			Projects: [],
+		},
+	},
+	thrifti: {
+		ProjectHeader: {
+			title: 'Thrifti',
+			publishDate: 'January 2024 – May 2024',
+			tags: 'Mobile App, Marketplace, React Native, TypeScript, Flask, Pinecone, Firebase, PostHog, Docker, GCP, Figma, ExpoGo',
+		},
+		ProjectImages: [
+			{
+				id: 1,
+				title: 'Thrifti main screen',
+				img: ThriftiMain,
+			},
+			{
+				id: 2,
+				title: 'Thrifti item listing screenshot',
+				img: ThriftiScreenshot1,
+			},
+			{
+				id: 3,
+				title: 'Thrifti chat screenshot',
+				img: ThriftiScreenshot2,
+			},
+		],
+		ProjectInfo: {
+			ClientHeading: 'About Involvement',
+			CompanyInfo: [
+				{
+					id: 1,
+					title: 'Client/Company',
+					details: 'Independent Group Project',
+				},
+				{
+					id: 2,
+					title: 'Role',
+					details: 'Backend lead — responsible for Firebase integration, vector database search via Pinecone, and full backend system design and deployment',
+				},
+			],
+			ObjectivesHeading: 'Objective',
+			ObjectivesDetails: 'Thrifti is a full-featured mobile marketplace app designed to make peer-to-peer resale safer, easier, and more sustainable for college students. Targeted especially at graduating students looking to offload used items or clothing, the platform promotes both environmental awareness and community trust by encouraging on-campus transactions.',
+			Technologies: [
+				{
+					title: 'Tools & Technologies',
+					techs: [
+						'React Native (TypeScript)',
+						'Python (Flask)',
+						'Pinecone',
+						'Firebase (Realtime DB, Storage, Analytics)',
+						'PostHog',
+						'Docker',
+						'GCP',
+						'Figma',
+						'ExpoGo',
+					],
+				},
+			],
+			ProjectDetailsHeading: 'Key Features & Challenges',
+			ProjectDetails: [
+				{
+					id: 1,
+					details: `Thrifti delivers a seamless mobile experience on both iOS and Android via ExpoGo. Users can post, browse, and filter items by tag, price, or location, and benefit from intelligent similarity-based item search using Pinecone's vector database. Real-time messaging is enabled through Firebase, while compressed image upload and local caching ensure fast performance. Analytics are tracked via Firebase and PostHog, and an admin-only dashboard provides real-time monitoring of app behavior and user flow.`
+				},
+				{
+					id: 2,
+					details: `Building Thrifti required careful coordination between frontend performance and backend scalability. Leveraging Pinecone for similarity search introduced complexity around efficient tagging and vector generation. Firebase's Realtime Database enabled fast messaging but required strict data structuring to remain performant at scale. Ensuring a smooth experience across both platforms with ExpoGo demanded rigorous testing, especially for image handling and caching. Tight integration between these services, along with lightweight deployment via Docker on GCP, allowed the app to remain performant and stable during active use and testing.`
+				}
+			],
+			SocialSharingHeading: 'Share This',
+			SocialSharing: [
+				{
+					id: 1,
+					name: 'LinkedIn',
+					icon: <FiLinkedin />,
+					url: 'https://linkedin.com/lgastaldi3/',
+				},
+			],
+			Links: [
+				{
+					title: 'Source Code',
+					details: 'https://github.com/lgastaldi3/thrifti',
 				},
 			],
 		},

@@ -17,7 +17,8 @@ const ProjectSingle = ({ title, category, image, slug }) => {
 					<div>
 						<img
 							src={image}
-							className="rounded-t-xl border-none"
+							className="rounded-t-xl border-none w-full object-cover my-4"
+							style={{height: '18rem', objectFit: 'cover'}}
 							alt="Single Project"
 						/>
 					</div>

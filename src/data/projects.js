@@ -1,7 +1,7 @@
 // Import images
-import MobileImage2 from '../images/mobile-project-2.jpg';
-import SolvImage1 from '../images/solv-project.jpg';
-import SolvPlaceholderMain from '../images/solv-project.jpg';
+import MobileImage2 from '../images/projects/gpt2/gpt2-diagram.jpg';
+import SolvImage from '../images/projects/solv/solv-project.jpg';
+import ThriftiImage from '../images/projects/thrifti/thrifti-cover.jpg';
 
 // TODO: ADD PERSONAL PROJECT, both existing and frameworks
 export const projectsData = [
@@ -10,7 +10,7 @@ export const projectsData = [
 		slug: 'solv',
 		title: 'Solv AI Technologies',
 		category: 'Web App, AI, Startup',
-		img: SolvPlaceholderMain,
+		img: SolvImage,
 		ProjectHeader: {
 			title: 'Solv AI Technologies',
 			publishDate: 'May 2023 – July 2024',
@@ -30,5 +30,19 @@ export const projectsData = [
 			tags: 'PyTorch, Python, Google Colab',
 		},
 		shortDescription: 'A minimal GPT-2-like model trained on movie quotes, built entirely from scratch using PyTorch, with transformer-style attention and beam search decoding.'
+	},
+	{
+		id: 3,
+		slug: 'thrifti',
+		title: 'Thrifti',
+		category: 'Mobile App, Marketplace',
+		img: ThriftiImage,
+		ProjectHeader: {
+			title: 'Thrifti',
+			publishDate: 'January 2024 – May 2024',
+			tags: 'React Native, TypeScript, Flask, Pinecone, Firebase, PostHog, Docker, GCP, Figma, ExpoGo',
+		},
+		shortDescription: 'A mobile marketplace for college students to safely and sustainably buy, sell, or give away secondhand items — built with React Native and a custom backend supporting intelligent search and real-time messaging.',
+		sourceCode: 'https://github.com/lgastaldi3/thrifti',
 	},
 ];
