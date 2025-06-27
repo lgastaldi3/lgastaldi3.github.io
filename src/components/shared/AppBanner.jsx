@@ -39,7 +39,7 @@ const AppBanner = () => {
 					}}
 					className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-secondary-light"
 				>
-					A Full-Stack Developer & Design Enthusiast
+					A Software and Machine Learning Engineer
 				</motion.p>
 				<motion.div
 					initial={{ opacity: 0 }}
