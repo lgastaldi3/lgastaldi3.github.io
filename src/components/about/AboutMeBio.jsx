@@ -1,6 +1,8 @@
 import profileImage from '../../images/profile.jpeg';
 import { useContext } from 'react';
 import AboutMeContext from '../../context/AboutMeContext';
+import { Link } from 'react-router-dom';
+import Button from '../reusable/Button';
 
 const AboutMeBio = () => {
 	const { aboutMe } = useContext(AboutMeContext);
@@ -20,6 +22,15 @@ const AboutMeBio = () => {
 						{bio.bio}
 					</p>
 				))}
+				<div className="mt-8 sm:mt-10 flex justify-center">
+					<Link
+						to="/projects"
+						className="font-general-medium flex items-center px-6 py-3 rounded-lg shadow-lg hover:shadow-xl bg-yellow-300 hover:bg-yellow-600 focus:ring-1 focus:ring-yellow-900 text-white text-lg sm:text-xl duration-300"
+						aria-label="Check Out My Work"
+						>
+						<Button title="Check Out My Work" />
+					</Link>
+				</div>
 			</div>
 		</div>
 	);
