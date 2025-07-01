@@ -62,7 +62,7 @@ const ProjectInfo = () => {
 					</p>
 				</div>
 
-				{/* Single project social sharing */}
+				{/* Single project social sharing
 				<div>
 					<p className="font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
 						{singleProjectData.ProjectInfo.SocialSharingHeading}
@@ -87,6 +87,7 @@ const ProjectInfo = () => {
 						)}
 					</div>
 				</div>
+				TODO: Make project sharable link */}
 			</div>
 
 			{/*  Single project right section */}

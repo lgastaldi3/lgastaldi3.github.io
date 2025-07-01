@@ -8,6 +8,8 @@ import Gpt2PlaceholderScreenshot1 from '../images/projects/gpt2/gpt2-dialogue.jp
 import ThriftiMain from '../images/projects/thrifti/thrifti-cover.jpg';
 import ThriftiScreenshot1 from '../images/projects/thrifti/thrifti-explore.jpg';
 import ThriftiScreenshot2 from '../images/projects/thrifti/thrifti-analytics.jpg';
+import GenScoreImage1 from '../images/projects/genscore/genscore-architecture.jpg';
+import GenScoreImage2 from '../images/projects/genscore/genscore-eval-graph.jpg';
 // Import icons
 import {
 	FiFacebook,
@@ -87,6 +89,7 @@ export const singleProjectData = {
 				}
 			],
 			SocialSharingHeading: 'Share This',
+			// TODO: Make project sharable link
 			SocialSharing: [
 				{
 					id: 4,
@@ -161,6 +164,7 @@ export const singleProjectData = {
 				}
 			],
 			SocialSharingHeading: 'Share This',
+			// TODO: Make project sharable link
 			SocialSharing: [
 				{
 					id: 1,
@@ -242,6 +246,7 @@ export const singleProjectData = {
 				}
 			],
 			SocialSharingHeading: 'Share This',
+			// TODO: Make project sharable link
 			SocialSharing: [
 				{
 					id: 1,
@@ -254,6 +259,166 @@ export const singleProjectData = {
 				{
 					title: 'Source Code',
 					details: 'https://github.com/lgastaldi3/thrifti',
+				},
+			],
+		},
+		RelatedProject: {
+			title: 'Related Projects',
+			Projects: [],
+		},
+	},
+	genscore: {
+		ProjectHeader: {
+			title: 'GenScore',
+			publishDate: 'March 2025 – Present',
+			tags: 'Machine Learning, NLP, TensorFlow, Regex, Google Colab, BERT (in progress)',
+		},
+		ProjectImages: [
+			{
+				id: 1,
+				title: 'GenScore architecture diagram',
+				img: GenScoreImage1,
+			},
+			{
+				id: 2,
+				title: 'Training data visualization',
+				img: GenScoreImage2,
+			},
+		],
+		ProjectInfo: {
+			ClientHeading: 'About Project',
+			CompanyInfo: [
+				{
+					id: 1,
+					title: 'Client/Company',
+					details: 'Independent / Personal Project',
+				},
+				{
+					id: 2,
+					title: 'Role',
+					details: 'Sole developer — responsible for architecture design, data preprocessing, model training, and evaluation',
+				},
+			],
+			ObjectivesHeading: 'Objective',
+			ObjectivesDetails: 'GenScore is an evaluation framework designed to assess the quality of language model outputs—a critical step toward developing more user-aligned and trustworthy AI systems, with future potential to guide safer generations and reduce issues like hallucination and misinformation.',
+			Technologies: [
+				{
+					title: 'Tools & Technologies',
+					techs: [
+						'TensorFlow',
+						'Regex',
+						'Google Colab',
+						'BERT (in progress)',
+					],
+				},
+			],
+			Links: [
+				{
+					title: 'Source Code',
+					details: 'TODO: Add GitHub link',
+				},
+				{
+					title: 'Case Study / Blog Post',
+					details: 'TODO: Add link',
+				},
+			],
+			ProjectDetailsHeading: 'Key Features & Challenges',
+			ProjectDetails: [
+				{
+					id: 1,
+					details: `GenScore uses a dual bidirectional RNN architecture for comparative evaluation, trained on 8GB of human preference data (query + two outputs + selected winner). Tokenization and deep preprocessing with Regex were used for noise reduction, and the system is designed to reflect average human preferences in generative text ranking. Ongoing optimization includes a shift toward transformer-based models (e.g., BERT), and the project has been built and iterated entirely within a research notebook (Jupyter/Colab).`
+				},
+				{
+					id: 2,
+					details: `The most significant challenge in developing GenScore was operating within the resource constraints of Google Colab. Training a neural network on such a large dataset using only a single GPU required thoughtful iteration cycles, selective sampling, and careful tracking of model behavior. Output coherence was particularly difficult to measure objectively, leading to the consideration of pre-trained transformer models like BERT to accelerate convergence and improve generalization. As the project evolves, integrating these models allows GenScore to scale beyond its original architecture while remaining grounded in interpretability and reproducibility.`
+				}
+			],
+			SocialSharingHeading: 'Share This',
+			// TODO: Make project sharable link
+			SocialSharing: [
+				{
+					id: 1,
+					name: 'LinkedIn',
+					icon: <FiLinkedin />,
+					url: 'https://linkedin.com/lgastaldi3/',
+				},
+			],
+		},
+		RelatedProject: {
+			title: 'Related Projects',
+			Projects: [],
+		},
+	},
+	storyboardai: {
+		ProjectHeader: {
+			title: 'StoryBoard AI',
+			publishDate: 'April 2025 – Present',
+			tags: 'Media Generation Platform, AI Content Tool, Flask, Python, OpenAI API, DALL·E, AWS EC2, Amazon S3, Prompt Engineering',
+		},
+		ProjectImages: [
+			/*{
+				id: 1,
+				title: 'Storyboard AI generated scene placeholder',
+				img: GenScoreImage1, // Placeholder, update with actual image later
+			},
+			{
+				id: 2,
+				title: 'Storyboard AI scene segmentation placeholder',
+				img: GenScoreImage2, // Placeholder, update with actual image later
+			},*/
+		],
+		ProjectInfo: {
+			ClientHeading: 'About Project',
+			CompanyInfo: [
+				{
+					id: 1,
+					title: 'Client/Company',
+					details: 'Personal consulting project in collaboration with a business partner',
+				},
+				{
+					id: 2,
+					title: 'Role',
+					details: 'Sole developer — built the backend, handled model integration, AWS deployment, and overall technical architecture',
+				},
+			],
+			ObjectivesHeading: 'Objective',
+			ObjectivesDetails: 'Storyboard AI is a content generation platform that transforms written stories into illustrated storyboards. Users can submit up to 10,000 words of text, which is automatically parsed into scenes using an LLM and converted into images using OpenAI\'s DALL·E. The backend is built with Flask, deployed on AWS EC2, and uses Amazon S3 for image storage. The project began in April 2025 as a collaborative MVP, aimed at exploring new applications of generative AI in media and marketing. Ongoing development is focused on improving visual consistency and scaling input handling for longer stories.',
+			Technologies: [
+				{
+					title: 'Tools & Technologies',
+					techs: [
+						'Flask (Python)',
+						'OpenAI API (DALL·E)',
+						'AWS EC2',
+						'Amazon S3',
+						'Prompt Engineering',
+					],
+				},
+			],
+			Links: [
+				{
+					title: 'Live Demo',
+					details: 'TODO: Add URL',
+				},
+				{
+					title: 'Source Code',
+					details: 'TODO: Add GitHub repo if available',
+				},
+			],
+			ProjectDetailsHeading: 'Key Features',
+			ProjectDetails: [
+				{
+					id: 1,
+					details: `Converts story text into illustrated scenes using DALL·E. Automatic scene segmentation and prompt generation. Custom Flask API backend with AWS deployment. Image storage and retrieval via Amazon S3. Foundation for future short film generation using video models. Visual consistency under active development via prompt engineering.`
+				}
+			],
+			// TODO: Make project sharable link
+			SocialSharing: [
+				{
+					id: 1,
+					name: 'LinkedIn',
+					icon: <FiLinkedin />,
+					url: 'https://linkedin.com/lgastaldi3/',
 				},
 			],
 		},

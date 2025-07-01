@@ -15,12 +15,21 @@ const AboutMeBio = () => {
 
 			<div className="font-general-regular w-full sm:w-3/4 text-left">
 				{aboutMe.map((bio) => (
-					<p
-						className="mb-4 text-ternary-dark dark:text-ternary-light text-lg"
-						key={bio.id}
-					>
-						{bio.bio}
-					</p>
+					<div>
+						{
+							bio.header !== '' &&<p
+								className="mb-4 font-general-bold text-ternary-dark dark:text-ternary-light text-2xl"
+								key={bio.header}>
+									{bio.header}
+							</p>
+						}
+						<p
+							className="mb-4 text-ternary-dark dark:text-ternary-light text-lg"
+							key={bio.id}
+						>
+							{bio.bio}
+						</p>
+					</div>
 				))}
 				<div className="mt-8 sm:mt-10 flex justify-center">
 					<Link

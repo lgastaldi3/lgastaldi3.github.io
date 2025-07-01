@@ -52,8 +52,8 @@ const AppBanner = () => {
 					className="flex justify-center sm:block"
 				>
 					<a
-						download="Lorenzo_Gastaldi_Resume_SWE.pdf"
-						href="/files/Lorenzo_Gastaldi_Resume_SWE.pdf"
+						download="Lorenzo_Gastaldi_Resume.pdf"
+						href="/files/Lorenzo_Gastaldi_Resume.pdf"
 						className="font-general-medium flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-yellow-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-yellow-300 focus:ring-1 focus:ring-yellow-900 hover:bg-yellow-500 hover:border-yellow-600 text-gray-500 hover:text-white duration-500"
 						aria-label="Download Resume"
 					>

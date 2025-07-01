@@ -1,13 +1,14 @@
 // TODO: Add relevant category options
 const selectOptions = [
-	'Web Application',
-	'Mobile Application',
-	'UI/UX Design',
-	'Branding',
+	'Web App',
+	'AI',
+	'Startup',
 	'Machine Learning',
 	'NLP',
-	'AI Research',
-	'Startup',
+	'Marketplace',
+	'Generative AI',
+	'Data Science',
+	'Media Platform',
 ];
 
 const ProjectsFilter = ({ setSelectProject }) => {

@@ -49,7 +49,7 @@ export const projectsData = [
 	},
 	{
 		id: 4,
-		slug: '', // TODO: Add slug
+		slug: 'genscore',
 		title: 'GenScore',
 		category: 'Machine Learning, NLP, Data Science',
 		img: GenScoreImage,
@@ -63,7 +63,7 @@ export const projectsData = [
 	},
 	{
 		id: 5,
-		slug: '', // TODO: Add slug and project page
+		slug: 'storyboardai',
 		title: 'StoryBoard AI',
 		category: 'Generative AI, Web App, Media Platform',
 		img: StoryBoardImage,
